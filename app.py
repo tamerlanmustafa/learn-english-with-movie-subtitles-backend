@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import os
 import requests
 from flask import Flask, request, jsonify
@@ -47,3 +48,16 @@ def index():
 
 if __name__ == '__main__':
     app.run(debug=True)
+=======
+
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return 'Hello Flask!'
+
+if __name__ == '__main__':
+    app.run()
+>>>>>>> afd4f49a9ec0868b6a603631194407d503e2a3c8
